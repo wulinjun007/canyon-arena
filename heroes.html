@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>英雄图鉴 · 峡谷竞技场</title>
+<meta name="description" content="133 位英雄全量图鉴：按职业筛选、按名称搜索，点击查看皮肤鉴赏、技能、出装与铭文推荐。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l12 7v14l-12 7L4 23V9z' fill='%23F0B35C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<style>.no-js .reveal{opacity:1;transform:none}</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="logo" href="index.html" aria-label="峡谷竞技场首页">
+      <span class="logo-mark">谷</span>
+      <span class="logo-name">峡谷竞技场<small>CANYON ARENA</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a class="on" href="heroes.html">英雄</a>
+      <a href="match.html">赛事</a>
+      <a href="news.html">资讯</a>
+      <a href="strategy.html">攻略</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold btn-sm" href="https://pvp.qq.com/" target="_blank" rel="noopener">下载游戏</a>
+      <button class="nav-toggle" aria-label="展开菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">HERO CODEX</span>
+      <h1 class="h1" style="font-size:clamp(34px,4.4vw,48px)">英雄图鉴</h1>
+      <p class="sub">全部 <b class="mono" style="color:var(--gold)">133</b> 位英雄 · 700+ 皮肤 · 图片来自官方 CDN。点击卡片进入英雄详情。</p>
+    </div>
+  </section>
+
+  <section style="padding:34px 0 var(--sec-y)">
+    <div class="wrap">
+      <div class="filter-bar" role="group" aria-label="英雄筛选">
+        <div class="fgroup" id="typeFilter">
+          <span class="fgroup-label">职业</span>
+          <button class="fchip on" data-type="全部">全部</button>
+          <button class="fchip" data-type="战士">战士</button>
+          <button class="fchip" data-type="法师">法师</button>
+          <button class="fchip" data-type="坦克">坦克</button>
+          <button class="fchip" data-type="刺客">刺客</button>
+          <button class="fchip" data-type="射手">射手</button>
+          <button class="fchip" data-type="辅助">辅助</button>
+        </div>
+        <div class="fgroup" id="laneFilter">
+          <span class="fgroup-label">分路</span>
+          <button class="fchip on" data-lane="全部">全部</button>
+          <button class="fchip" data-lane="对抗路">对抗路</button>
+          <button class="fchip" data-lane="中路">中路</button>
+          <button class="fchip" data-lane="发育路">发育路</button>
+          <button class="fchip" data-lane="打野">打野</button>
+          <button class="fchip" data-lane="游走">游走</button>
+        </div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="heroSearch" type="search" placeholder="搜索英雄名 / 称号…" aria-label="搜索英雄">
+        </div>
+      </div>
+
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+      <div class="grid-heroes" id="heroGrid"></div>
+      <div id="emptyState" style="display:none;text-align:center;padding:70px 0;color:var(--ink-3)">
+        <p style="font-size:40px;margin-bottom:12px">⚔</p>
+        <p>没有找到匹配的英雄，换个关键词试试。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark">谷</span>
+          <span class="logo-name">峡谷竞技场<small>CANYON ARENA</small></span>
+        </a>
+        <p class="footer-desc">英雄图鉴 · 皮肤鉴赏 · 铭文出装 · 赛事赛程。本站为学习用途的静态演示站，与腾讯官方无关联。</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <b>站内</b>
+          <a href="index.html">首页</a>
+          <a href="heroes.html">英雄图鉴</a>
+          <a href="news.html">版本资讯</a>
+          <a href="strategy.html">攻略数据</a>
+        </div>
+        <div class="footer-col">
+          <b>官方入口</b>
+          <a href="https://pvp.qq.com/" target="_blank" rel="noopener">王者荣耀官网</a>
+          <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" rel="noopener">官方英雄列表</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 峡谷竞技场 · 粉丝向演示站</span>
+      <span>英雄 / 皮肤图片来自腾讯《王者荣耀》官方 CDN（game.gtimg.cn），版权归腾讯及天美工作室所有，仅作学习演示。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  var grid = document.getElementById('heroGrid');
+  var empty = document.getElementById('emptyState');
+  var count = document.getElementById('resultCount');
+  var fType = '全部', fLane = '全部', q = '';
+
+  function render() {
+    grid.innerHTML = '';
+    var list = DATA.heroes.filter(function (h) {
+      if (fType !== '全部' && h.type !== fType && h.type2 !== fType) return false;
+      if (fLane !== '全部' && h.lane !== fLane) return false;
+      if (q && h.name.indexOf(q) < 0 && h.title.indexOf(q) < 0) return false;
+      return true;
+    });
+    count.innerHTML = '共 <b>' + list.length + '</b> 位英雄';
+    empty.style.display = list.length ? 'none' : 'block';
+    var frag = document.createDocumentFragment();
+    list.forEach(function (h) {
+      var b = document.createElement('button');
+      b.className = 'hcard';
+      b.id = 'hero-' + h.id;
+      b.setAttribute('aria-label', h.name + ' ' + h.title);
+      b.innerHTML =
+        '<span class="hcard-pic">' +
+        (h.isNew ? '<i class="hcard-new">NEW</i>' : '') +
+        '<img loading="lazy" alt="' + h.name + '" src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/' + h.id + '/' + h.id + '.jpg"></span>' +
+        '<span class="hcard-meta"><span class="hcard-name"><b>' + h.name + '</b><span>' + h.title + '</span></span>' +
+        '<span class="hcard-tags"><span class="chip gold">' + h.type + '</span>' + (h.type2 ? '<span class="chip">' + h.type2 + '</span>' : '') + '<span class="chip cyan">' + h.lane + '</span></span></span>';
+      b.querySelector('img').onerror = function () { fallbackPic(this, h.name[0]); };
+      b.addEventListener('click', function () { openHeroModal(h.id); });
+      frag.appendChild(b);
+    });
+    grid.appendChild(frag);
+  }
+
+  document.getElementById('typeFilter').addEventListener('click', function (e) {
+    var t = e.target.closest('.fchip'); if (!t) return;
+    this.querySelectorAll('.fchip').forEach(function (c) { c.classList.remove('on'); });
+    t.classList.add('on'); fType = t.dataset.type; render();
+  });
+  document.getElementById('laneFilter').addEventListener('click', function (e) {
+    var t = e.target.closest('.fchip'); if (!t) return;
+    this.querySelectorAll('.fchip').forEach(function (c) { c.classList.remove('on'); });
+    t.classList.add('on'); fLane = t.dataset.lane; render();
+  });
+  document.getElementById('heroSearch').addEventListener('input', function () {
+    q = this.value.trim(); render();
+  });
+
+  render();
+
+  /* 深链：heroes.html#h-131 直开英雄详情 */
+  var m = location.hash.match(/^#h-(\d+)/);
+  if (m) {
+    var id = +m[1];
+    if (DATA.heroes.some(function (h) { return h.id === id; })) {
+      setTimeout(function () { openHeroModal(id, false); }, 60);
+    }
+  }
+})();
+</script>
+</body>
+</html>

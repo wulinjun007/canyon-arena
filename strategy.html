@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>攻略数据 · 峡谷竞技场</title>
+<meta name="description" content="93 枚五级铭文全量图鉴（红/蓝/绿三系）、官方通用出装模板与分路打法口诀。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l12 7v14l-12 7L4 23V9z' fill='%23F0B35C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<style>.no-js .reveal{opacity:1;transform:none}</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="logo" href="index.html" aria-label="峡谷竞技场首页">
+      <span class="logo-mark">谷</span>
+      <span class="logo-name">峡谷竞技场<small>CANYON ARENA</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="heroes.html">英雄</a>
+      <a href="match.html">赛事</a>
+      <a href="news.html">资讯</a>
+      <a class="on" href="strategy.html">攻略</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold btn-sm" href="https://pvp.qq.com/" target="_blank" rel="noopener">下载游戏</a>
+      <button class="nav-toggle" aria-label="展开菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">STRATEGY</span>
+      <h1 class="h1" style="font-size:clamp(34px,4.4vw,48px)">攻略数据</h1>
+      <p class="sub">铭文图鉴来自官方公开数据（93 枚五级铭文），出装为官方推荐通用模板，口诀为社区经验总结。</p>
+    </div>
+  </section>
+
+  <!-- 铭文图鉴 -->
+  <section class="sec" id="mings">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">MINGWEN</span>
+          <h2 class="h2">铭文图鉴</h2>
+          <p class="sub">按 红 / 蓝 / 绿 三系分类，支持名称与属性搜索。</p>
+        </div>
+        <div class="search-box" style="margin-left:0">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="mingSearch" type="search" placeholder="搜索铭文名 / 属性…" aria-label="搜索铭文">
+        </div>
+      </div>
+      <div class="tabs" id="mingTabs" role="tablist" style="margin-bottom:26px">
+        <button class="tab on" data-t="全部">全部 <span class="mono" style="opacity:.6">93</span></button>
+        <button class="tab" data-t="红">红 · 攻击向</button>
+        <button class="tab" data-t="蓝">蓝 · 功能向</button>
+        <button class="tab" data-t="绿">绿 · 生存向</button>
+      </div>
+      <div class="ming-grid" id="mingGrid"></div>
+    </div>
+  </section>
+
+  <!-- 出装模板 -->
+  <section class="sec" id="build">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">BUILD</span>
+          <h2 class="h2">通用出装模板 <span class="demo-badge" style="vertical-align:6px">官方推荐示例</span></h2>
+          <p class="sub">来自官方英雄详情页的推荐出装组合，六件套顺序即合成路线。每位英雄的详情页均可查看。</p>
+        </div>
+      </div>
+      <div class="build-strip reveal" id="buildStrip" style="margin-bottom:18px"></div>
+      <p class="result-count">※ 出装需结合阵容灵活调整：逆风补防御装，顺风可换输出装。详细建议见各英雄详情页。</p>
+    </div>
+  </section>
+
+  <!-- 分路口诀 -->
+  <section class="sec" id="tips">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">LANES</span>
+          <h2 class="h2">分路打法口诀</h2>
+          <p class="sub">五条分路各一句核心心法，社区经验总结，供速记参考。</p>
+        </div>
+      </div>
+      <div class="tip-grid">
+        <div class="tip-card reveal"><b><i>TOP</i>对抗路</b><p>一塔是底线不是目标：换线期看地图再动手，兵线进塔再支援，别把传送值浪费在必输的团。</p></div>
+        <div class="tip-card reveal"><b><i>MID</i>中路</b><p>清线快过对面才有主动权：两波线一游走，河道视野是中路的第一装备。</p></div>
+        <div class="tip-card reveal"><b><i>ADC</i>发育路</b><p>活着才有输出：红 buff 期避战，两件套前不接团，塔下补刀不丢人。</p></div>
+        <div class="tip-card reveal"><b><i>JGL</i>打野</b><p>资源规划先于抓人：buff 刷新记时间，反野前先看队友线权，龙团提前 30 秒落位。</p></div>
+        <div class="tip-card reveal"><b><i>SUP</i>游走</b><p>你是全队的视野与节拍器：跟强不跟弱，开团前留保排技能，劣势局护住唯一肥点。</p></div>
+        <div class="tip-card reveal"><b><i>ALL</i>通用</b><p>经济落后先做视野再抓单，兵线比人头值钱，破一路高地比拿两条龙更接近胜利。</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark">谷</span>
+          <span class="logo-name">峡谷竞技场<small>CANYON ARENA</small></span>
+        </a>
+        <p class="footer-desc">铭文数据与图标来自官方公开接口（pvp.qq.com/web201605/js/ming.json），仅作学习演示。</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <b>站内</b>
+          <a href="index.html">首页</a>
+          <a href="heroes.html">英雄图鉴</a>
+          <a href="match.html">赛事赛程</a>
+          <a href="news.html">版本资讯</a>
+        </div>
+        <div class="footer-col">
+          <b>官方入口</b>
+          <a href="https://pvp.qq.com/" target="_blank" rel="noopener">王者荣耀官网</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 峡谷竞技场 · 粉丝向演示站</span>
+      <span>铭文 / 装备图片来自腾讯《王者荣耀》官方 CDN，版权归腾讯及天美工作室所有。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  var grid = document.getElementById('mingGrid');
+  var fType = '全部', q = '';
+
+  function render() {
+    grid.innerHTML = '';
+    var list = DATA.mings.filter(function (m) {
+      if (fType !== '全部' && m.type !== fType) return false;
+      if (q && m.name.indexOf(q) < 0 && m.des.indexOf(q) < 0) return false;
+      return true;
+    });
+    var frag = document.createDocumentFragment();
+    list.forEach(function (m) {
+      var d = document.createElement('div');
+      d.className = 'ming-card';
+      d.innerHTML =
+        '<span class="ming-pic"><img loading="lazy" alt="' + m.name + '" src="https://game.gtimg.cn/images/yxzj/img201606/mingwen/' + m.id + '.png"></span>' +
+        '<span class="ming-info"><span class="ming-name"><b>' + m.name + '</b>' +
+        '<span class="chip' + (m.type === '红' ? ' gold' : m.type === '蓝' ? ' cyan' : '') + '">' + m.type + ' · ' + m.grade + '级</span></span>' +
+        '<p class="ming-des">' + m.des + '</p></span>';
+      d.querySelector('img').onerror = function () { fallbackPic(this, m.name[0]); };
+      frag.appendChild(d);
+    });
+    grid.appendChild(frag);
+    document.getElementById('mingCount') && (document.getElementById('mingCount').innerHTML = '共 <b>' + list.length + '</b> 枚铭文');
+  }
+  document.getElementById('mingTabs').addEventListener('click', function (e) {
+    var t = e.target.closest('.tab'); if (!t) return;
+    this.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('on'); });
+    t.classList.add('on'); fType = t.dataset.t; render();
+  });
+  document.getElementById('mingSearch').addEventListener('input', function () {
+    q = this.value.trim(); render();
+  });
+  render();
+
+  /* 出装模板 */
+  var bs = document.getElementById('buildStrip');
+  DATA.buildItems.forEach(function (id, i) {
+    var d = document.createElement('div');
+    d.className = 'build-slot';
+    d.innerHTML =
+      '<span class="build-pic"><img loading="lazy" alt="装备' + (i + 1) + '" src="https://game.gtimg.cn/images/yxzj/img201606/itemimg/' + id + '.jpg"></span>' +
+      '<span>第' + (i + 1) + '件</span>';
+    d.querySelector('img').onerror = function () { fallbackPic(this, '装'); };
+    bs.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>

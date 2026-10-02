@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>峡谷竞技场 CANYON ARENA · 英雄竞技数据站</title>
+<meta name="description" content="峡谷竞技场：英雄图鉴、皮肤鉴赏、铭文出装数据、赛事赛程与版本情报一站式入口。演示站，素材来自王者荣耀官方公开 CDN。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l12 7v14l-12 7L4 23V9z' fill='%23F0B35C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<style>.no-js .reveal{opacity:1;transform:none}</style>
+</head>
+<body>
+
+<!-- ======= 顶栏 ======= -->
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="logo" href="index.html" aria-label="峡谷竞技场首页">
+      <span class="logo-mark">谷</span>
+      <span class="logo-name">峡谷竞技场<small>CANYON ARENA</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a class="on" href="index.html">首页</a>
+      <a href="heroes.html">英雄</a>
+      <a href="match.html">赛事</a>
+      <a href="news.html">资讯</a>
+      <a href="strategy.html">攻略</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold btn-sm" href="https://pvp.qq.com/" target="_blank" rel="noopener">下载游戏</a>
+      <button class="nav-toggle" aria-label="展开菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ======= Banner ======= -->
+<section class="banner">
+  <div class="banner-bg">
+    <img src="https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/528/528-bigskin-1.jpg" alt="澜" onerror="this.style.display='none'">
+  </div>
+  <div class="wrap banner-in">
+    <span class="banner-tag"><i></i>S45 赛季 · 月照长安</span>
+    <h1 class="h1">月照长安<br><em>诗剑入峡谷</em></h1>
+    <p class="banner-sub">新英雄「王维」携长安诗意上线，召唤师技能「雾行千山」同步登场。133 位英雄图鉴、93 枚铭文数据、赛事赛程与版本情报，一站聚合。</p>
+    <div class="banner-cta">
+      <a class="btn btn-gold" href="heroes.html">进入英雄图鉴</a>
+      <a class="btn-ghost" href="news.html">查看版本情报 →</a>
+    </div>
+    <div class="banner-stats">
+      <div class="bstat"><b>133</b><span>英雄图鉴</span></div>
+      <div class="bstat"><b>700<i>+</i></b><span>皮肤鉴赏</span></div>
+      <div class="bstat"><b>93</b><span>铭文数据</span></div>
+      <div class="bstat"><b>S45</b><span>当前赛季</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 英雄精选 ======= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">HEROES</span>
+        <h2 class="h2">英雄精选</h2>
+        <p class="sub">点击英雄卡查看皮肤鉴赏、技能、出装与铭文推荐。全部 133 位英雄支持职业与分路筛选。</p>
+      </div>
+      <a class="more-link" href="heroes.html">全部英雄 →</a>
+    </div>
+    <div class="grid-heroes reveal" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ======= 版本情报 ======= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">INTEL</span>
+        <h2 class="h2">版本情报</h2>
+        <p class="sub">S45「月照长安」赛季重点内容速览。</p>
+      </div>
+      <a class="more-link" href="news.html">全部资讯 →</a>
+    </div>
+    <div class="news-layout">
+      <article class="card news-hero reveal">
+        <div class="card-cover">
+          <img src="https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/508/508-bigskin-1.jpg" alt="伽罗" loading="lazy" onerror="fallbackPic(this,'伽')">
+          <span class="chip gold" style="position:absolute;top:12px;left:12px">皮肤上新</span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">SKIN · 皮肤上新</span>
+          <h3 class="card-title" style="font-size:20px">伽罗-月影弦鸣 · 海诺-星光竞辉 · 孙尚香-云端乐园同步上架</h3>
+          <p class="card-desc">S45 赛季皮肤矩阵一次性放出四款高品质新皮肤，月影弦鸣以弦乐与月色为主题，云端乐园联动萌趣风格。</p>
+          <p class="card-date">2026-09-28 · 版本上线</p>
+        </div>
+      </article>
+      <div class="news-list reveal">
+        <a class="news-item" href="news.html">
+          <span class="chip gold">新英雄</span>
+          <span class="news-item-title">新英雄「王维」上线：以诗入阵，雾隐千山</span>
+          <span class="news-item-date">09-28</span>
+        </a>
+        <a class="news-item" href="news.html">
+          <span class="chip cyan">玩法爆料</span>
+          <span class="news-item-title">指挥官模式开启体验：战术指挥视角首曝</span>
+          <span class="news-item-date">09-26</span>
+        </a>
+        <a class="news-item" href="news.html">
+          <span class="chip gold">版本公告</span>
+          <span class="news-item-title">召唤师技能「雾行千山」加入召唤师峡谷</span>
+          <span class="news-item-date">09-25</span>
+        </a>
+        <a class="news-item" href="news.html">
+          <span class="chip cyan">休闲玩法</span>
+          <span class="news-item-title">王者农场昼夜切换功能上线，庄园夜景首曝</span>
+          <span class="news-item-date">09-24</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 赛事中心 ======= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">ESPORTS</span>
+        <h2 class="h2">赛事中心 <span class="demo-badge" style="vertical-align:6px">示例赛程</span></h2>
+        <p class="sub">2026 KPL 秋季赛 · 常规赛第二轮（赛程数据为演示样例）。</p>
+      </div>
+      <a class="more-link" href="match.html">全部赛程 →</a>
+    </div>
+    <div class="match-layout">
+      <div class="reveal" style="display:grid;gap:14px">
+        <div class="match-card">
+          <div class="match-when"><span>10-03 · 周六 17:00</span><b>BO5</b></div>
+          <div class="match-vs">
+            <div class="team"><span class="team-logo g">成</span><div><b>成都AG超玩会</b><span>AG</span></div></div>
+            <span class="vs-x">VS</span>
+            <div class="team right"><span class="team-logo c">重</span><div><b>重庆狼队</b><span>WOL</span></div></div>
+          </div>
+          <p class="match-score">S 组焦点战 · 上轮交手 AG 3:2 险胜</p>
+        </div>
+        <div class="match-card">
+          <div class="match-when"><span>10-03 · 周六 20:00</span><b>BO5</b></div>
+          <div class="match-vs">
+            <div class="team"><span class="team-logo c">武</span><div><b>武汉eStarPro</b><span>eST</span></div></div>
+            <span class="vs-x">VS</span>
+            <div class="team right"><span class="team-logo g">北</span><div><b>北京WB</b><span>WB</span></div></div>
+          </div>
+          <p class="match-score">S 组 · eStar 新阵容首秀</p>
+        </div>
+      </div>
+      <div class="standings reveal">
+        <div class="standings-head"><h3 class="h3">S 组积分榜</h3><span class="demo-badge">示例数据</span></div>
+        <table>
+          <thead><tr><th>#</th><th>战队</th><th>胜/负</th><th>积分</th></tr></thead>
+          <tbody>
+            <tr><td class="pos">1</td><td>重庆狼队</td><td class="num">5 / 1</td><td class="num">5</td></tr>
+            <tr><td class="pos">2</td><td>成都AG超玩会</td><td class="num">4 / 2</td><td class="num">4</td></tr>
+            <tr><td class="pos">3</td><td>武汉eStarPro</td><td class="num">4 / 2</td><td class="num">4</td></tr>
+            <tr><td class="pos">4</td><td>北京WB</td><td class="num">3 / 3</td><td class="num">3</td></tr>
+            <tr><td class="pos">5</td><td>苏州KSG</td><td class="num">2 / 4</td><td class="num">2</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 攻略数据 ======= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">STRATEGY</span>
+        <h2 class="h2">攻略数据</h2>
+        <p class="sub">铭文图鉴全量数据 + 官方出装模板 + 分路打法口诀。</p>
+      </div>
+      <a class="more-link" href="strategy.html">进入攻略 →</a>
+    </div>
+    <div class="guide-layout">
+      <a class="guide-card reveal" href="strategy.html#mings">
+        <div class="guide-icon">铭</div>
+        <h3 class="h3">铭文图鉴</h3>
+        <p>红 / 蓝 / 绿三系 93 枚五级铭文全量数据，图标与属性来自官方公开数据，支持分类速查。</p>
+        <span class="more-link">查看铭文 →</span>
+      </a>
+      <a class="guide-card reveal" href="strategy.html#build">
+        <div class="guide-icon">装</div>
+        <h3 class="h3">出装模板</h3>
+        <p>官方推荐通用六神装模板，每一位英雄的详情页都可查看对应出装与召唤师技能建议。</p>
+        <span class="more-link">查看出装 →</span>
+      </a>
+      <a class="guide-card reveal" href="strategy.html#tips">
+        <div class="guide-icon">术</div>
+        <h3 class="h3">分路口诀</h3>
+        <p>对抗路换线期、中路支援节奏、发育路生存空间、打野资源规划、游走开团时机，五路口诀速记。</p>
+        <span class="more-link">查看口诀 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 热度榜 ======= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">RANKING</span>
+        <h2 class="h2">英雄热度榜 <span class="demo-badge" style="vertical-align:6px">示例数据</span></h2>
+        <p class="sub">根据近一周图鉴浏览与对局热度模拟生成，点击查看英雄详情。</p>
+      </div>
+      <a class="more-link" href="heroes.html">查看全部 →</a>
+    </div>
+    <div class="rank-list reveal" id="rankList" style="max-width:640px"></div>
+  </div>
+</section>
+
+<!-- ======= CTA ======= -->
+<section class="cta-band">
+  <div class="wrap cta-in reveal">
+    <h2 class="h2">不是一个人的王者，<br>而是团队的荣耀。</h2>
+    <p class="sub">本站为粉丝向数据演示站。下载与全部官方内容请前往王者荣耀官方网站。</p>
+    <div class="banner-cta">
+      <a class="btn btn-white" href="https://pvp.qq.com/" target="_blank" rel="noopener">前往官网下载</a>
+      <a class="btn-ghost" href="heroes.html">先逛逛图鉴</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 页脚 ======= -->
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark">谷</span>
+          <span class="logo-name">峡谷竞技场<small>CANYON ARENA</small></span>
+        </a>
+        <p class="footer-desc">英雄图鉴 · 皮肤鉴赏 · 铭文出装 · 赛事赛程。本站为学习用途的静态演示站，与腾讯官方无关联。</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <b>站内</b>
+          <a href="index.html">首页</a>
+          <a href="heroes.html">英雄图鉴</a>
+          <a href="news.html">版本资讯</a>
+          <a href="strategy.html">攻略数据</a>
+        </div>
+        <div class="footer-col">
+          <b>赛事</b>
+          <a href="match.html">赛程赛果</a>
+          <a href="match.html#standings">积分榜</a>
+          <a href="news.html">赛事资讯</a>
+        </div>
+        <div class="footer-col">
+          <b>官方入口</b>
+          <a href="https://pvp.qq.com/" target="_blank" rel="noopener">王者荣耀官网</a>
+          <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" rel="noopener">官方英雄列表</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 峡谷竞技场 · 粉丝向演示站</span>
+      <span>英雄 / 皮肤 / 装备 / 铭文图片来自腾讯《王者荣耀》官方 CDN（game.gtimg.cn），版权归腾讯及天美工作室所有，仅作学习演示。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+/* 英雄精选 */
+var FEATURED = [138, 531, 528, 518, 131, 146, 141, 111];
+var fg = document.getElementById('featuredGrid');
+FEATURED.forEach(function (id) {
+  var h = DATA.heroes.find(function (x) { return x.id === id; });
+  if (!h) return;
+  var b = document.createElement('button');
+  b.className = 'hcard';
+  b.setAttribute('aria-label', h.name + ' ' + h.title);
+  b.innerHTML =
+    '<span class="hcard-pic">' +
+    (h.isNew ? '<i class="hcard-new">NEW</i>' : '') +
+    '<img loading="lazy" alt="' + h.name + '" src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/' + h.id + '/' + h.id + '.jpg"></span>' +
+    '<span class="hcard-meta"><span class="hcard-name"><b>' + h.name + '</b><span>' + h.title + '</span></span>' +
+    '<span class="hcard-tags"><span class="chip gold">' + h.type + '</span><span class="chip">' + h.lane + '</span></span></span>';
+  b.querySelector('img').onerror = function () { fallbackPic(this, h.name[0]); };
+  b.addEventListener('click', function () { openHeroModal(h.id); });
+  fg.appendChild(b);
+});
+
+/* 热度榜（示例） */
+var RANK = [
+  { id: 531, v: 96 }, { id: 528, v: 92 }, { id: 138, v: 88 },
+  { id: 518, v: 85 }, { id: 131, v: 81 }, { id: 508, v: 77 },
+  { id: 146, v: 73 }, { id: 141, v: 70 }
+];
+var rl = document.getElementById('rankList');
+RANK.forEach(function (r, i) {
+  var h = DATA.heroes.find(function (x) { return x.id === r.id; });
+  if (!h) return;
+  var d = document.createElement('button');
+  d.className = 'rank-item';
+  d.style.textAlign = 'left';
+  d.innerHTML =
+    '<span class="rank-pos">' + (i + 1) + '</span>' +
+    '<span class="rank-ava"><img loading="lazy" alt="' + h.name + '" src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/' + h.id + '/' + h.id + '.jpg"></span>' +
+    '<span class="rank-name"><b>' + h.name + '</b><span>' + h.title + ' · ' + h.type + ' · ' + h.lane + '</span></span>' +
+    '<span class="rank-bar"><i style="width:' + r.v + '%"></i></span>' +
+    '<span class="rank-val">' + r.v + '</span>';
+  d.querySelector('.rank-ava img').onerror = function () { fallbackPic(this, h.name[0]); };
+  d.addEventListener('click', function () { openHeroModal(h.id); });
+  rl.appendChild(d);
+});
+</script>
+</body>
+</html>
